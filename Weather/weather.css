@@ -35,7 +35,6 @@ button {
     background: rgba(122, 122, 122, 0.17);
     color: white;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
 }
 
 input.search-bar {
@@ -82,10 +81,13 @@ h1.temp {
     top: 0;
     left: 20px;
 }
-#searchButton{
+#search_button{
     background-image: url("issues/magnifying-glass.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
-#searchButton:not(button){
+#search_button:not(button){
     background: rgba(147, 145, 145, 0.17);
 }
 
@@ -110,6 +112,8 @@ h1.temp {
 #detail_information{
     rotate: 90deg;
     text-align: right;
+    position: fixed;
+    right:0;
 }
 #close_modal {
     color: #79bdf5;
